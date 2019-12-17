@@ -1,4 +1,4 @@
-#Linear Regression
+# LINEAR REGRESSION
 1. https://machinelearningmastery.com/linear-regression-for-machine-learning/
 
 
