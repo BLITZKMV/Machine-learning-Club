@@ -9,5 +9,9 @@
 | Train Accuracy | 86.48867618120377 |
 
 - #### Graphs
+
+  - Regression plotted against train data from train.csv
 ![Regression plotted against train data from train.csv](./graphs/train_data.jpg)
+
+  - Regression plotted against test data from test.csv
 ![Regression plotted against test data from test.csv](./graphs/test_data.jpg)
