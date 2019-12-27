@@ -3,17 +3,18 @@
 
 #### Theory
 The regression model forms an equation of type Y = KX + E, where Y, K and E are vectors, and X is a matrix of independent variables.
-The mean squared error (MSE) is sum(e**2 for e in E)/len(E). Now, rows(E) = rows(Y) and sum(...) = E*transpose(E)
-Now, E = Y - KX. Thus, mean squared error is ((Y-KX)*transpose(Y-KX))/rows(Y)
-To find K which minimizes MSE, the product of transpose(X) and (Y-KX) should be zero. Thus, K may be estimated as:
-- Xt(Y-KX) = 0, where Xt = transpose(X)
-- XtY - KXtX = 0
-- KXtX = XtY
-- K = (XtX)^-1 . XtY
+The mean squared error (MSE) is ```sum(e**2 for e in E)/len(E)```. Now, ```rows(E) = rows(Y)``` and ```sum(...) = E*transpose(E)```
+Now, ```E = Y - KX```. Thus, mean squared error is ```((Y-KX)*transpose(Y-KX))/rows(Y)```
+To find K which minimizes MSE, the product of ```transpose(X)``` and ```(Y-KX)``` should be zero. Thus, K may be estimated as:
+- ```Xt(Y-KX) = 0```, where ```Xt = transpose(X)```
+- ```XtY - KXtX = 0```
+- ```KXtX = XtY```
+- ```K = (XtX)^-1 . XtY```
 
 #### Calculation Results
 Train : Test Ratios:
 - 60:40
+
   | Independent Variable | Regression Coefficient |
   | --- | --- |
   | bedrooms | -43321.25 |
@@ -34,6 +35,7 @@ Train : Test Ratios:
   | Intercept | 6783824.0 |
 
 - 70:30
+
   | Independent Variable | Regression Coefficient |
   | --- | --- |
   | bedrooms | -40557.5 |
@@ -54,6 +56,7 @@ Train : Test Ratios:
   | Intercept | 6790144.0 |
 
 - 80:20
+
   | Independent Variable | Regression Coefficient |
   | --- | --- |
   | bedrooms | -36633.5 |
@@ -74,6 +77,7 @@ Train : Test Ratios:
   | Intercept | 6706304.0 |
 
 - 90:10
+
   | Independent Variable | Regression Coefficient |
   | --- | --- |
   | bedrooms | -36961.0 |
@@ -94,9 +98,10 @@ Train : Test Ratios:
   | Intercept | 6644864.0 |
 
 #### Results
+
 | Dataset Size (Train : Test) | Accuracy |
-| --- | --- | --- |
-| 60:40 | 71.60942224459171 |
-| 70:30 | 62.871967776811715 |
-| 80:20 | 52.62981099417116 |
-| 90:10 | 69.46402934307604 | 
+| --- | --- |
+| 60 : 40 | 71.60942224459171 |
+| 70 : 30 | 62.871967776811715 |
+| 80 : 20 | 52.62981099417116 |
+| 90 : 10 | 69.46402934307604 | 
